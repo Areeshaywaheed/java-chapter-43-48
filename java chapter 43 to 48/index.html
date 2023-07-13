@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java chapter 43 to 48</title>
+</head>
+<body>
+
+        <!-- 1. Show an alert box on click on a link. -->
+
+        <h4>Program number 01</h4>
+        <a href="JavaScript:void(0)" onclick="alert(`You have Clicked on a link recently`);">Click Me</a>
+    
+        <!-- 2. Display some Mobile images in browser. On click on an image Show the message in alert to user. -->
+
+        <h4>Program number 02</h4>
+    
+        <img src="./images/1st mobile.jpg" style="width: 150px;" onclick="alert(`Thank you for buying phone from our company`);">
+        <img src="./images/2nd mobile.jpg" style="width: 150px;" onclick="alert(`Thank you for buying phone from our company`);">
+        <img src="./images/3rd mobile.jpg" style="width: 150px;" onclick="alert(`Thank you for buying phone from our company`);">
+    
+        <!-- 3. Display 10 student records in table and each row should contain a delete 
+            button. If you click on a button to delete a record, entire row should be 
+            deleted. -->
+            
+        <h4>Program number 03</h4>
+    
+        <h2>Student Records</h2>
+    
+        <table border="1px" width="100%" style="text-align: center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Button</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>John</td>
+                    <td>8th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Mark</td>
+                    <td>1oth</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Leo</td>
+                    <td>9th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Joni</td>
+                    <td>10th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Doe</td>
+                    <td>8th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>John</td>
+                    <td>9th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Mark</td>
+                    <td>10th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>Leo</td>
+                    <td>9th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td>Joni</td>
+                    <td>8th</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td>Doe</td>
+                    <td>1oth</td>
+                    <td><button onclick="deletedRow(this)">Deleted</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    
+        <!-- 4. Display an image in browser. Change the picture on mouseover and set the
+        first picture on mouseout -->
+    
+        <h4>Program number 04</h4>
+    
+        <img src="./images/1st mobile.jpg" onmouseover="src='./images/2nd mobile.jpg'" onmouseout="src='./images/1st mobile.jpeg'" width="150px">
+
+        <!-- 5. Show a counter in browser. Counter should increase on click on increase 
+        button and decrease on click on decrease button. And show updated counter 
+        value in browser. -->
+    
+        <h4>Program number 05</h4>
+    
+        <input type="button" value="Increase" onclick="counter1();">
+        <input type="button" value="Decrease" onclick="counter2();">
+        <p>I am a fast Counter: <span id="count">0</span> </p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
